@@ -7,6 +7,7 @@ from home.models import CustomText, HomePage
 
 def home(request):
     packages = [
+	{'name':'django-oscar', 'url': 'http://pypi.python.org/pypi/django-oscar/1.5.1'},
     ]
     context = {
         'customtext': CustomText.objects.first(),
